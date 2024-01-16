@@ -8,17 +8,19 @@
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     </head>
     <body>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
         <header>
             <div class="caja">
                 <h1><img class="perfil" src="imagenes/perfil.png" alt="foto de perfil"></h1>
                 <nav>
-                    <ul>
-                        <li><a href=#sobre-mi>Sobre mi</a></li>
-                        <li><a href=#proyectos>Proyectos</a></li>
-                        <li><a href=#contacto>Contacto</a></li>
-                    </ul>
+                <ul>
+                    <li><a href=#sobre-mi>Sobre mi</a></li>
+                    <li><a href=#proyectos>Proyectos</a></li>
+                    <li><a href=#contacto>Contacto</a></li>
+                </ul>
                 </nav>
             </div>
         </header>
@@ -28,10 +30,12 @@
                 <div class="contenido-habilidades">
                     <img class="banner" src="imagenes/banner2.jpg">
                     <h2 class="titulo" id="sobre-mi">Sobre mi</h2>
-                    <p class="sobre-mi">Soy Brian, tengo 27 años, actualmente me encuentro cursando la carrera de Ingenieria en Sistemas de la UTN, soy una persona muy curiosa y siempre me fascino entender como funciona todo esto que nos facilita la vida llamado tecnologia.</p>
-                
+                    <p class="sobre-mi">Soy Brian, tengo 28 años, actualmente me encuentro cursando la carrera de Ingenieria en Sistemas de la UTN, soy una persona muy curiosa y siempre me fascino entender como funciona todo esto que nos facilita la vida llamado tecnologia.</p>
+                </div>    
+                <div class="contenido-habilidades">
+                    <h2 class="titulo">Habilidades</h2>
                     <ul class="tecnologias">    
-                        <h2 class="titulo">Habilidades</h2>
+                    
                         <li>
                             <img src="imagenes/html5.png">
                         </li>
@@ -42,14 +46,13 @@
                             <img src="imagenes/js.png">
                         </li>
                         <li>
-                            <img src="imagenes/python.png">
+                            <img src="imagenes/python.png"> 
                         </li>
                     </ul>
                 </div>
             </section>
 
-            <section class="hobbies">
-                    
+            <section class="hobbies">               
                 <h2 class="titulo">Hobbies</h2>
                 <div class="contenido-hobbies">
                     <ul class="lista">
@@ -61,32 +64,82 @@
                 </div>
             </section>
 
+
+
             <section class="certificados">
-                <div class="tam-certificados">
-                    <div class="contenido-certificados">
-                        <h2 class="titulo">Certificados</h2>
-                        <img src="imagenes/certificados1.PNG">
-                        <img src="imagenes/certificados2.PNG">
+                <h2 class="titulo">Certificados</h2>
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="imagenes/certificado-python.png" class="d-block w-100 custom-carousel-img" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="imagenes/certificados1.PNG" class="d-block w-100 custom-carousel-img" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imagenes/certificado-arg-programa.png" class="d-block w-100 custom-carousel-img" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </section>
-            <section class="proyectos">
-                <ul class="contenido-proyectos">
+
+            <section class="proyectos" id="proyectos">
+                <h2 class="titulo">Proyectos</h2>
+                <div class="contenido-proyectos">
                     <li>
                         <a href="https://github.com/Brianje95/recepcionCamiones">
-                        <h2>Recepcion de Camiones</h2>
+                        <h2 class="titulos-proyectos">Recepcion de Camiones</h2>
                         <img src="imagenes/tp3.PNG">
-                        <img src="imagenes/codigoPY.PNG">
                         <p class="proyecto-descripcion">trabajo de la facultad en Algoritmos y Estructuras de Datos - Python con Archivos</p>
                         </a>
                     </li>
-                </ul>
+                </div>
+                
+                <div class="contenido-proyectos">
+                    <li>
+                        <a href="https://github.com/Brianje95/Catalogo-Peliculas/blob/main/peliculas.rar">
+                        <h2 class="titulos-proyectos">Buscador de Peliculas en Java</h2>
+                        <img src="imagenes/catalogo-peliculas-java.png">
+                        <p class="proyecto-descripcion">Catalogo de Peliculas para entender la sintaxis de Java</p>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="contenido-proyectos">
+                    <li>
+                        <a href="https://github.com/Brianje95/">
+                        <h2 class="titulos-proyectos">Scraping en Guia Telefonica</h2>
+                        <img src="imagenes/base-sheet.png">
+                        <p class="proyecto-descripcion">Buscador en Python con interfaz en Tkinter, utilizado para completar datos en Google Sheet</p>
+                        </a>
+                    </li>
+                </div>
             </section>
+
             <section  class="contacto">
                 <ul class="contenido-contacto">
                     <li><h2 class="titulo" id="contacto">Contacto</h2></li>
                     <li><img src="imagenes/wp.png"></li>
-                    <li><p>3412699085</p></li>
+                    <li><p><a href="https://wa.me/3412699085">3412699085</a></p></li>
                     <li><img src="imagenes/in.png"></li>
                     <li><p><a href="https://www.linkedin.com/in/brian-escalante/">https://www.linkedin.com/in/brian-escalante/</a></p></li>
                 </ul>
